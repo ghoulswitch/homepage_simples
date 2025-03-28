@@ -1,0 +1,107 @@
+:root {
+    --azul-escuro: #111729;
+    --cinza-escuro: #223344;
+    --azul-claro: #2A4DD0;
+    --verde: #4CA154;
+    --cinza-claro: #909193;
+    --branco: #F2F9FE;
+    --tamanho-titulo: 60px;
+    --tamanho-body: 18px;
+    --tamanho-texto-botao: 16px;
+    --tamanho-texto-pequeno: 14px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;;
+}
+
+nav {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 370px 10px 440px;
+    color: var(--cinza-escuro);
+    font-size: var(--tamanho-texto-pequeno);
+    font-weight: 500;
+}
+
+p {
+    /* background-color: rgb(222, 217, 248); */
+    font-size: var(--tamanho-body);
+    color: var(--cinza-escuro);
+    font-weight: 500;
+}
+
+#paragrafo-header {
+    margin: 90px 0 30px 56px;
+    width: 500px;
+}
+
+h1 {
+    /* background-color: rgba(210, 105, 30, 0.397); */
+    color: var(--cinza-escuro);
+    font-size: var(--tamanho-titulo);
+    width: 550px;
+    margin: 0 0 30px 56px;
+}
+
+#paragrafo-principal {
+    margin: 0 0 25px 56px;
+    width: 700px;
+}
+
+button {
+    background-color: var(--azul-claro);
+    color: white;
+    font-weight: 500;
+    margin: 0 23px 30px 56px;
+    padding: 10px 32px;
+    border-radius: 10px;
+}
+
+.botao a {
+    color: var(--azul-claro);
+    font-size: var(--tamanho-texto-botao);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5px;
+}
+
+footer {
+    /* background-color: rgba(220, 20, 60, 0.445); */
+    position: relative;
+    margin: 15px 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    color: var(--cinza-escuro);
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+h2::before {
+    content: url('./media/checkmark-circle.svg');
+    display: inline-block;
+    height: 18px;
+    vertical-align: top;
+}
+
+.imagem {
+    /* background-color: rgba(85, 107, 47, 0.596); */
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 730px;
+    margin: -520px 0 100px 570px;
+}
+
+.imagem img {
+    width: 80%;
+    height: 80%;
+}
