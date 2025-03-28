@@ -45,22 +45,22 @@ nav {
     background-color: var(--azul-escuro);
     display: flex;
     padding: 2px 0 2px 3px;
-    width: 47px;
+    width: 48px;
     margin: -36px 0 0 1200px;
     border-radius: 20px;
 }
 
-#lua {
+#icon-lua-claro {
     width: 17px;
     cursor: pointer;
 }
 
-#sol {
+#icon-sol {
     background-color: var(--branco);
     width: 20px;
     border-radius: 50px;
     padding: 1px;
-    margin: 0 0 0 5.3px;
+    margin: 0 0 0 5.5px;
     cursor: pointer;
 }
 
@@ -143,4 +143,50 @@ h2::before {
 .imagem img {
     width: 75%;
     height: 75%;
+}
+
+/* TEMA ESCURO */
+.dark-mode {
+    background-color: var(--azul-escuro);
+}
+
+.dark-mode nav {
+    color: white;
+}
+
+.dark-mode #tema {
+    background-color: var(--cinza-escuro);
+}
+
+.dark-mode #icon-lua-claro {
+    background-color: var(--branco);
+    border-radius: 50px;
+    width: 20px;
+}
+
+.dark-mode #icon-lua-escuro {
+    background-color: #4CA154;
+    width: 17px;
+}
+
+.dark-mode #icon-sol {
+    background-color: white;
+    margin: 0 0 0 2.5px;
+}
+
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode .botao a {
+    color: white;
+    font-weight: 600;
+}
+
+.dark-mode footer {
+    color: white;
 }
