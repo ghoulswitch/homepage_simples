@@ -1,25 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const darkMode = localStorage.getItem("dark-mode");
     const botaoLuaLight = document.getElementById("icon-lua-claro");
     const botaoLuaDark = document.getElementById("icon-lua-escuro");
-    const botaoSol = document.getElementById("icon-sol");
-    const botoes = document.querySelectorAll("#icon-lua-claro, #icon-sol");
-    const body = document.body;
 
-    botaoLuaDark.style.display = 'none';
+    const enableDarkMode = () => {
+        document.body.classList.add('dark-mode')
+        localStorage.setItem('dark-mode', 'active')
+    };
 
-    botoes.forEach(botao => {
-        botao.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
+    const disableDarkMode = () => {
+        document.body.classList.remove('dark-mode')
+        localStorage.setItem('dark-mode', null)
+    };
 
-            if (botaoLuaLight.style.display == 'show') {
-                botaoLuaLight.style.display = 'none';
-                botaoLuaDark.style.display = 'show'
-            } else {
-                botaoLuaLight.style.display = 'show'
-                botaoLuaDark.style.display = 'none'
-            }
-            
-        })
-    })
+    if(darkMode === "active") enableDarkMode();
+
+    botaoLuaLight.addEventListener("click", () => {
+        const darkMode = localStorage.getItem("dark-mode");
+        if (darkMode !== "active") {
+        enableDarkMode();
+        } else {
+        disableDarkMode()
+        }
+    });
+
+    botaoLuaDark.addEventListener("click", () => {
+        const darkMode = localStorage.getItem("dark-mode");
+        if (darkMode !== "active") {
+        enableDarkMode();
+        } else {
+        disableDarkMode()
+        }
+    });
+
 });
 
