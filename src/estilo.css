@@ -22,8 +22,7 @@ body {
     margin: -15px 0 0 50px;
 }
 
-nav {
-    /* background-color: antiquewhite; */
+/* nav {
     display: flex;
     justify-content: space-evenly;
     margin: 45px 370px 10px 440px;
@@ -38,6 +37,23 @@ nav {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 5px;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 45px 370px 10px 440px;
+    font-weight: 500;
+}
+
+nav a::after {
+    color: var(--azul-claro);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 #tema {
@@ -68,7 +84,6 @@ nav {
 }
 
 p {
-    /* background-color: rgb(222, 217, 248); */
     font-size: var(--tamanho-body);
     color: var(--cinza-escuro);
     font-weight: 500;
@@ -80,7 +95,6 @@ p {
 }
 
 h1 {
-    /* background-color: rgba(210, 105, 30, 0.397); */
     color: var(--cinza-escuro);
     font-size: var(--tamanho-titulo);
     width: 550px;
@@ -111,7 +125,6 @@ button {
 }
 
 footer {
-    /* background-color: rgba(220, 20, 60, 0.445); */
     position: relative;
     margin: 15px 0 0 50px;
     display: flex;
@@ -135,7 +148,6 @@ h2::before {
 }
 
 .imagem {
-    /* background-color: rgba(85, 107, 47, 0.596); */
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -152,13 +164,6 @@ h2::before {
 .dark-mode {
     background-color: var(--azul-escuro);
 }
-
-/* .dark-mode #logo {
-    background-image: url(./media/logo-alarado-dark.svg);
-    position: absolute;
-    width: 200px;
-    margin: -15px 0 0 50px;
-} */
 
 .dark-mode nav {
     color: white;
