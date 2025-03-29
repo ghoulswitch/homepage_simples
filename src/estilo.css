@@ -17,7 +17,6 @@ body {
 }
 
 #logo {
-    /* background-color: rgba(144, 238, 144, 0.548); */
     position: absolute;
     width: 200px;
     margin: -15px 0 0 50px;
@@ -154,6 +153,13 @@ h2::before {
     background-color: var(--azul-escuro);
 }
 
+/* .dark-mode #logo {
+    background-image: url(./media/logo-alarado-dark.svg);
+    position: absolute;
+    width: 200px;
+    margin: -15px 0 0 50px;
+} */
+
 .dark-mode nav {
     color: white;
 }
@@ -171,6 +177,7 @@ h2::before {
     background-color: var(--branco);
     border-radius: 50px;
     width: 20px;
+    cursor: pointer;
 }
 
 .dark-mode #icon-sol {
