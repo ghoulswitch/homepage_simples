@@ -6,15 +6,6 @@
    Solution for a challenge <a href="https://devchallenges.io/challenge/simple-hompage-alarado" target="_blank">Simple Homepage - Alarado </a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## ÍNDICE
-
-- [Visão geral](#visão-geral)
-  - [Feito com](#feito-com)
-  - [Recursos utilizados](#recursos-utilizados)
-- [To-do](#to-do)
-
 
 <!-- OVERVIEW -->
 
